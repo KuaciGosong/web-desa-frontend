@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./style-email.css";
-import "./themee5ca.css";
-import "./dashlitee5ca.css";
-import { Sidebar } from "@/components/Sidebar";
+import "@/lib/css/style-email.css";
+import "@/lib/css/themee5ca.css";
+import "@/lib/css/dashlitee5ca.css";
+import { Sidebar } from "@/lib/components/Sidebar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,13 +21,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id">
-      <body className="nk-body ui-rounder npc-default has-sidebar no-touch nk-nio-theme">
-        <div className="nk-app-root">
-          <Sidebar/>
-          <div className="nk-main">
-            {children}
-          </div>
-        </div>
+      <body>
+        {children}        
       </body>
     </html>
   );

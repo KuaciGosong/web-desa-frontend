@@ -7,11 +7,11 @@ export function Sidebar() {
 						><img
 							className="logo-light logo-img"
 							src="/images/logo-small.png"
-							srcSet="/demo7/images/logo-small2x.png 2x"
+							srcSet="/images/logo-small2x.png 2x"
 							alt="logo" /><img
 							className="logo-dark logo-img"
 							src="/images/logo-dark-small.png"
-							srcSet="/demo7/images/logo-dark-small2x.png 2x"
+							srcSet="/images/logo-dark-small2x.png 2x"
 							alt="logo-dark"
 					/></a>
 				</div>
